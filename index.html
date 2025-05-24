@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Graduation Invitation - Nguyễn Thị Anh Đào</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, rgba(255, 182, 193, 0.2), rgba(221, 160, 221, 0.2)), url('https://i.imgur.com/7qZ0k9L.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      overflow-x: hidden;
+    }
+    .script {
+      font-family: 'Great Vibes', cursive;
+    }
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 90%;
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .tab-button.active {
+      background: linear-gradient(45deg, #f472b6, #ec4899);
+      color: white;
+      font-weight: 600;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+    .tab-button {
+      transition: all 0.3s ease;
+    }
+    .tab-button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #f9a8d4, #f472b6);
+    }
+    /* Heart Bling Animation */
+    .heart-bling {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url('https://img.icons8.com/emoji/48/000000/cherry-blossom.png') no-repeat center;
+      background-size: contain;
+      animation: float 5s infinite ease-in-out;
+      pointer-events: none;
+      z-index: 5;
+    }
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+      50% { transform: translateY(-20px) rotate(10deg); opacity: 1; }
+      100% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+    }
+    /* Sparkle Effect */
+    .sparkle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+      border-radius: 50%;
+      animation: sparkle 3s infinite ease-in-out;
+      pointer-events: none;
+      z-index: 5;
+    }
+    @keyframes sparkle {
+      0% { transform: scale(0.5); opacity: 0.7; }
+      50% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(0.5); opacity: 0.7; }
+    }
+    img {
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    nav {
+      background: linear-gradient(45deg, rgba(255, 255, 255, 0.95), rgba(255, 192, 203, 0.95));
+    }
+    nav a:hover {
+      color: #ec4899;
+      transition: color 0.3s ease;
+    }
+    footer {
+      background: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 192, 203, 0.9));
+    }
+  </style>
+</head>
+<body class="text-gray-800 fade-in relative">
+  <!-- 🎵 Background Music -->
+  <audio autoplay loop>
+    <source src="your-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- 🌸 Navigation -->
+  <nav class="shadow-md sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center py-3">
+      <div class="script text-3xl text-pink-600">Anh Đào's Graduation</div>
+      <div class="space-x-4 text-sm md:text-base">
+        <a href="#home" class="hover:text-pink-500 font-semibold">Home</a>
+        <a href="#journey" class="hover:text-pink-500 font-semibold">My Journey</a>
+        <a href="#gallery" class="hover:text-pink-500 font-semibold">Images</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🏡 Home Section -->
+  <section id="home" class="overlay text-center py-16 px-6">
+    <h1 class="text-6xl script text-pink-600 mb-2">You're Invited</h1>
+    <p class="text-xl">to celebrate the graduation of</p>
+    <h2 class="text-5xl font-bold text-purple-700 mt-4">Nguyễn Thị Anh Đào</h2>
+    <p class="italic mt-2 text-gray-600">“The future belongs to those who believe in the beauty of their dreams.”</p>
+
+    <!-- 🎯 Receiver Customization -->
+    <div class="mt-6">
+      <label class="block mb-2 text-lg text-gray-700">Dear</label>
+      <input id="receiver" type="text" placeholder="e.g. My beloved family" class="p-2 rounded-lg border w-64 text-center focus:outline-none focus:ring-2 focus:ring-pink-400"/>
+      <p class="mt-4 text-xl text-pink-700 font-semibold" id="receiver-display"></p>
+    </div>
+  </section>
+
+  <!-- 📍 Event Details -->
+  <section class="overlay max-w-xl mx-auto p-6 rounded-3xl shadow-lg text-center my-6">
+    <h3 class="text-2xl font-semibold text-pink-600 mb-2">Event Details</h3>
+    <p><strong>Date:</strong> 31/05/2025</p>
+    <p><strong>Location:</strong> Tôn Đức Thắng University</p>
+    <a href="" class="text-blue-500 underline mt-2 inline-block hover:text-blue-700" target="_blank">View on Google Maps</a>
+  </section>
+
+  <!-- 🚶‍♀️ My Journey -->
+  <section id="journey" class="overlay max-w-3xl mx-auto px-4 py-10">
+    <h3 class="text-3xl font-semibold text-center text-purple-600 mb-6">My Journey</h3>
+    <p class="text-center leading-relaxed text-gray-700">
+      From the very first day stepping into the university gates, I’ve grown, laughed, studied hard, made unforgettable memories, and now, I’m proud to say: I’ve made it. Thank you to everyone who was part of this journey.
+    </p>
+  </section>
+
+  <!-- 🖼️ Image Gallery Tabs -->
+  <section id="gallery" class="overlay max-w-5xl mx-auto px-4 py-10">
+    <h3 class="text-2xl font-semibold text-center text-purple-600 mb-4">Images</h3>
+    <div class="flex justify-center space-x-3 mb-6">
+      <button onclick="showTab('freshman')" class="tab-button bg-pink-400 text-white px-4 py-2 rounded-full active">Freshman</button>
+      <button onclick="showTab('friends')" class="tab-button bg-pink-400 text-white px-4 py-2 rounded-full">Friends</button>
+      <button onclick="showTab('grad')" class="tab-button bg-pink-400 text-white px-4 py-2 rounded-full">Graduation</button>
+    </div>
+
+    <div id="freshman" class="tab-content tab-active grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="/images/_MG_0103.JPG" class="rounded-xl shadow-md" />
+      <img src="/images/concert3.JPG" class="rounded-xl shadow-md" />
+      <img src="/images/xtn.jpg" class="rounded-xl shadow-md" />
+    </div>
+    <div id="friends" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="/images/HSV.jpg" class="rounded-xl shadow-md" />
+      <img src="/images/LCH.jpg" class="rounded-xl shadow-md" />
+      <img src="/images/_MG_5513.JPG" class="rounded-xl shadow-md" />
+    </div>
+    <div id="grad" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="/images/MMT.jpg" class="rounded-xl shadow-md" />
+      <img src="/images/NT.jpg" class="rounded-xl shadow-md" />
+      <img src="/images/IMG_8917.JPG" class="rounded-xl shadow-md" />
+    </div>
+  </section>
+
+  <!-- 🌹 Footer -->
+  <footer class="text-center text-sm py-4 text-gray-600">
+    With love and gratitude, Anh Đào 🌸
+  </footer>
+
+  <!-- JS for Tabs + Receiver + Heart Bling -->
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.add('hidden');
+        tab.classList.remove('tab-active');
+      });
+      document.getElementById(tabId).classList.remove('hidden');
+      document.getElementById(tabId).classList.add('tab-active');
+      document.querySelectorAll('.tab-button').forEach(button => {
+        button.classList.remove('active');
+      });
+      document.querySelector(`button[onclick="showTab('${tabId}')"]`).classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      showTab('freshman');
+      for (let i = 0; i < 10; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart-bling';
+        heart.style.left = `${Math.random() * 100}vw`;
+        heart.style.top = `${Math.random() * 100}vh`;
+        heart.style.animationDelay = `${Math.random() * 3}s`;
+        document.body.appendChild(heart);
+
+        const sparkle = document.createElement('div');
+        sparkle.className = 'sparkle';
+        sparkle.style.left = `${Math.random() * 100}vw`;
+        sparkle.style.top = `${Math.random() * 100}vh`;
+        sparkle.style.animationDelay = `${Math.random() * 2}s`;
+        document.body.appendChild(sparkle);
+      }
+    });
+
+    document.getElementById('receiver').addEventListener('input', function() {
+      const name = this.value.trim();
+      document.getElementById('receiver-display').innerText = name ? `Dear ${name},` : '';
+    });
+
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        showTab('freshman');
+      
+        // 💖 Receiver from URL
+        const receiverName = getQueryParam('name');
+        if (receiverName) {
+          document.getElementById('receiver').value = receiverName;
+          document.getElementById('receiver-display').innerText = `Dear ${receiverName},`;
+        }
+      
+        // 💖 Heart and sparkle animation
+        for (let i = 0; i < 10; i++) {
+          const heart = document.createElement('div');
+          heart.className = 'heart-bling';
+          heart.style.left = `${Math.random() * 100}vw`;
+          heart.style.top = `${Math.random() * 100}vh`;
+          heart.style.animationDelay = `${Math.random() * 3}s`;
+          document.body.appendChild(heart);
+      
+          const sparkle = document.createElement('div');
+          sparkle.className = 'sparkle';
+          sparkle.style.left = `${Math.random() * 100}vw`;
+          sparkle.style.top = `${Math.random() * 100}vh`;
+          sparkle.style.animationDelay = `${Math.random() * 2}s`;
+          document.body.appendChild(sparkle);
+        }
+      });
+      
+
+
+  </script>
+</body>
+</html>
