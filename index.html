@@ -45,7 +45,7 @@
       transform: scale(1.05);
       background: linear-gradient(45deg, #f9a8d4, #f472b6);
     }
-    /* Heart Bling Animation */
+    /* Heart Bling bling Animation */
     .heart-bling {
       position: absolute;
       width: 20px;
@@ -97,13 +97,13 @@
   </style>
 </head>
 <body class="text-gray-800 fade-in relative">
-  <!-- 🎵 Background Music -->
+  <!--Background Music -->
   <audio autoplay loop>
     <source src="your-music.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
-  <!-- 🌸 Navigation -->
+  <!-- Navigation -->
   <nav class="shadow-md sticky top-0 z-10">
     <div class="max-w-6xl mx-auto px-4 flex justify-between items-center py-3">
       <div class="script text-3xl text-pink-600">Anh Đào's Graduation</div>
@@ -115,64 +115,100 @@
     </div>
   </nav>
 
-  <!-- 🏡 Home Section -->
+  <!--Home -->
   <section id="home" class="overlay text-center py-16 px-6">
     <h1 class="text-6xl script text-pink-600 mb-2">You're Invited</h1>
     <p class="text-xl">to celebrate the graduation of</p>
-    <h2 class="text-5xl font-bold text-purple-700 mt-4">Nguyễn Thị Anh Đào</h2>
-    <p class="italic mt-2 text-gray-600">“The future belongs to those who believe in the beauty of their dreams.”</p>
+    <h2 class="text-2xl font-semibold text-pink-600 mb-2">Nguyễn Thị Anh Đào</h2>
+    <p class="italic mt-2 text-gray-600">"Life is not about waiting for the storm to pass, it's about learning to dance in the rain"</p>
 
-    <!-- 🎯 Receiver Customization -->
+    <!-- Receiver -->
     <div class="mt-6">
-        <h1 id="receiver">Dear ,</h1>
+        <h1 id="receiver" class="text-5xl font-bold text-purple-700 mt-4">Dear ,</h1>
     </div>
   </section>
 
-  <!-- 📍 Event Details -->
+  <!-- Event Details -->
   <section class="overlay max-w-xl mx-auto p-6 rounded-3xl shadow-lg text-center my-6">
     <h3 class="text-2xl font-semibold text-pink-600 mb-2">Event Details</h3>
-    <p><strong>Date:</strong> 31/05/2025</p>
-    <p><strong>Location:</strong> Tôn Đức Thắng University</p>
+    <p><strong>Date:</strong> 31/5/2025 (Saturday)</p>
+    <p><strong>Time:</strong> 10:00 AM</p>
+    <p><strong>Location:</strong> Hall A - Tôn Đức Thắng University</p>
     <a href="https://maps.app.goo.gl/b4fe246c4KnW9pDF6" class="text-blue-500 underline mt-2 inline-block hover:text-blue-700" target="_blank">View on Google Maps</a>
+    <p><strong>Contact:</strong> 0373154392 (Anh Đào)</p>
+    <p><strong>Parking:</strong></p>
+    <img src="/flora-graduation/images/parking.png" class="rounded-xl shadow-md" />
+
   </section>
 
-  <!-- 🚶‍♀️ My Journey -->
+  <!-- My Journey -->
   <section id="journey" class="overlay max-w-3xl mx-auto px-4 py-10">
     <h3 class="text-3xl font-semibold text-center text-purple-600 mb-6">My Journey</h3>
-    <p class="text-center leading-relaxed text-gray-700">
-      From the very first day stepping into the university gates, I’ve grown, laughed, studied hard, made unforgettable memories, and now, I’m proud to say: I’ve made it. Thank you to everyone who was part of this journey.
+    <p class="text-center leading-relaxed text-gray-700"> 
+      From the very first day I stepped through the university gates, I’ve grown, laughed, cried, studied hard, and created unforgettable memories. Today, I’m proud to say: I made it. Thank you to everyone who has been part of this journey.
+      My path in IT wasn’t always smooth. There were moments I wanted to give up, times when I couldn’t grasp the lessons no matter how hard I tried. Some days, I cried from frustration and setbacks. But there were also moments of joy - sharing laughter with friends, enjoying time with family, and finding peace within myself.
+      To you - who stood by me - who helped me feel better, be drunk, shared a laugh, or a life lesson - thank you. Your presence made all the difference.
     </p>
+    <br>
+    <p>
+      Từ ngày đầu tiên bước qua cánh cổng đại học, mình đã lớn lên, cười nè, khóc nè, học hành cũng vất vả huhu và tạo nên thật nhiều kỷ niệm không thể nào quên. Hôm nay, mình cũng chút tự hào nói rằng: Mình đã làm được. Cảm ơn tất cả những ai đã đồng hành cùng mình trên chặng đường này.
+      Hành trình học IT này không phải lúc nào cũng suôn sẻ. Đã có lúc mình muốn bỏ cuộc, rồi không hiểu nổi những bài giảng của thầy cô. Có những ngày mình chỉ biết khóc vì những điều tệ thật tệ xảy ra. Nhưng, cũng có những khoảnh khắc thật đẹp - khi mình được tận hưởng thời gian bên gia đình, bạn bè, và chính bản thân mình nữa.
+      Bởi vậy, cảm ơn tất cả những ai đã hiện diện trong cuộc đời mình, đã khiến mình cảm thấy tốt hơn, đã cùng mình chill, say ngoắc hay mang đến những bài học quý giá cho mình. Sự hiện diện của các bạn đã làm nên tất cả sự khác biệt đó hehe.
+    </p>
+      
   </section>
 
-  <!-- 🖼️ Image Gallery Tabs -->
+  <!-- Image Gallery Tabs -->
   <section id="gallery" class="overlay max-w-5xl mx-auto px-4 py-10">
     <h3 class="text-2xl font-semibold text-center text-purple-600 mb-4">Images</h3>
     <div class="flex justify-center space-x-3 mb-6">
-      <button onclick="showTab('freshman')" class="tab-button bg-pink-400 text-white px-4 py-2 rounded-full active">Freshman</button>
-      <button onclick="showTab('friends')" class="tab-button bg-pink-400 text-white px-4 py-2 rounded-full">Friends</button>
-      <button onclick="showTab('grad')" class="tab-button bg-pink-400 text-white px-4 py-2 rounded-full">Graduation</button>
+      <button onclick="showTab('frienddd')" class="tab-button bg-pink-400 text-white px-4 py-2 rounded-full active">friends</button>
+      <button onclick="showTab('crazy')" class="tab-button bg-pink-400 text-white px-4 py-2 rounded-full">crazy</button>
+      <button onclick="showTab('grad')" class="tab-button bg-pink-400 text-white px-4 py-2 rounded-full">achievements</button>
     </div>
 
-    <div id="freshman" class="tab-content tab-active grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <img src="/images/_MG_0103.JPG" class="rounded-xl shadow-md" />
-      <img src="/images/concert3.JPG" class="rounded-xl shadow-md" />
-      <img src="/images/xtn.jpg" class="rounded-xl shadow-md" />
+    <div id="frienddd" class="tab-content tab-active grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="/flora-graduation/images/frds/frs1.JPG" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/frds/frds2.png" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/frds/frds3.JPG" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/frds/frds4.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/frds/frds5.JPG" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/frds/frds6.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/frds/frds7.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/frds/frds8.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/frds/frds9.jpg" class="rounded-xl shadow-md" />
+
+
     </div>
-    <div id="friends" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <img src="/images/HSV.jpg" class="rounded-xl shadow-md" />
-      <img src="/images/LCH.jpg" class="rounded-xl shadow-md" />
-      <img src="/images/_MG_5513.JPG" class="rounded-xl shadow-md" />
+    <div id="crazy" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="/flora-graduation/images/crazy/cr1.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/crazy/cr2.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/crazy/cr3.JPG" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/crazy/cr4.png" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/crazy/cr5.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/crazy/cr6.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/crazy/cr7.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/crazy/cr8.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/crazy/cr9.jpg" class="rounded-xl shadow-md" />
+
     </div>
     <div id="grad" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <img src="/images/MMT.jpg" class="rounded-xl shadow-md" />
-      <img src="/images/NT.jpg" class="rounded-xl shadow-md" />
-      <img src="/images/IMG_8917.JPG" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/achi/achi1.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/achi/achi2.png" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/achi/achi3.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/achi/achi4.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/achi/achi5.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/achi/achi6.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/achi/achi7.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/achi/achi9.jpg" class="rounded-xl shadow-md" />
+      <img src="/flora-graduation/images/achi/achi8.JPG" class="rounded-xl shadow-md" />
+
     </div>
   </section>
 
-  <!-- 🌹 Footer -->
+  <!-- Footer -->
   <footer class="text-center text-sm py-4 text-gray-600">
-    With love and gratitude, Anh Đào 🌸
+    With love and gratitude 🌸 Anh Đào 🌸 Xin cảm ơn rất nhiều
   </footer>
 
   <!-- JS for Tabs + Receiver + Heart Bling -->
@@ -191,7 +227,7 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-      showTab('freshman');
+      showTab('frienddd');
       for (let i = 0; i < 10; i++) {
         const heart = document.createElement('div');
         heart.className = 'heart-bling';
@@ -220,15 +256,15 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-        showTab('freshman');
+        showTab('frienddd');
       
-        // 💖 Receiver from URL
+        // Receiver from URL
         const receiverName = getQueryParam('name');
         if (receiverName) {
           document.getElementById('receiver').innerText = `Dear ${receiverName},`;
         }
       
-        // 💖 Heart and sparkle animation
+        // Heart and sparkle animation
         for (let i = 0; i < 10; i++) {
           const heart = document.createElement('div');
           heart.className = 'heart-bling';
@@ -246,8 +282,6 @@
         }
       });
       
-
-
   </script>
 </body>
 </html>
