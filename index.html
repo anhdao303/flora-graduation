@@ -124,9 +124,7 @@
 
     <!-- 🎯 Receiver Customization -->
     <div class="mt-6">
-      <label class="block mb-2 text-lg text-gray-700">Dear</label>
-      <input id="receiver" type="text" placeholder="e.g. My beloved family" class="p-2 rounded-lg border w-64 text-center focus:outline-none focus:ring-2 focus:ring-pink-400"/>
-      <p class="mt-4 text-xl text-pink-700 font-semibold" id="receiver-display"></p>
+        <h1 id="receiver">Dear ,</h1>
     </div>
   </section>
 
@@ -227,8 +225,7 @@
         // 💖 Receiver from URL
         const receiverName = getQueryParam('name');
         if (receiverName) {
-          document.getElementById('receiver').value = receiverName;
-          document.getElementById('receiver-display').innerText = `Dear ${receiverName},`;
+          document.getElementById('receiver').innerText = `Dear ${receiverName},`;
         }
       
         // 💖 Heart and sparkle animation
